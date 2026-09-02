@@ -39,3 +39,21 @@ URL Auto-Virtual Host Laragon (Opsional): http://pemweb-obe.test/ (jika fitur Au
 
 
 *diperbaharui pukul : 10.49
+
+# Portal Kurikulum Outcome-Based Education (OBE)
+
+## Deskripsi Halaman
+Halaman web berbasis HTML5 semantik ini berfungsi sebagai portal informasi Kurikulum Outcome-Based Education (OBE). Struktur dokumen mencakup informasi program, daftar berita/artikel, dan formulir kontak sederhana.
+
+## Cara Menjalankan (Laragon 5)
+1. Buka aplikasi Laragon 5.
+2. Simpan folder proyek ini di dalam direktori `C:\laragon\www\pemweb-obe`.
+3. Klik Start All pada Laragon 5 untuk mengaktifkan Apache/Nginx.
+4. Akses `http://localhost/pemweb-obe/` di browser.
+
+## Catatan Fitur Selesai
+- [x] Struktur HTML5 semantik (`header`, `nav`, `main`, `section`, `article`, `form`, `footer`)
+- [x] Hierarki heading yang logis (`h1` hingga `h3`)
+- [x] Penggunaan atribut `alt` informatif dan dekoratif (`alt=""`) pada gambar
+- [x] Formulir kontak dengan keterkaitan `label` (`for`) dan `input` (`id`)
+- [x] Aksesibilitas navigasi urut menggunakan tombol `Tab`
