@@ -1,0 +1,65 @@
+.hero-card {
+  width: 100%;                  /* Lebar awal memenuhi kontainer */
+  max-width: 90%;               /* %: Lebar maksimum fleksibel 90% dari lebar layar */
+  margin: 0 auto;               /* Posisikan kartu di tengah secara horizontal */
+  border: 2px solid #cbd5e0;    /* px: Ketebalan border tetap/presisi */
+  border-radius: 12px;          /* px: Kelengkungan sudut kartu yang konsisten */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Bayangan lembut di bawah kartu */
+  padding: 2.5rem;              /* rem: Ruang di dalam kartu yang responsif */
+  background-color: #ffffff;    /* Warna latar belakang kartu */
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 4vw, 3rem); /* clamp(): Ukuran teks otomatis fleksibel (min 1.75rem, max 3rem) */
+  line-height: 1.2;                      /* Jarak antar baris teks judul */
+  color: #1a202c;                        /* Warna teks judul */
+  margin-bottom: 1rem;                   /* rem: Jarak bawah judul ke deskripsi */
+}
+
+.hero-description {
+  font-size: 1.125rem; /* rem: Ukuran font deskripsi (~18px) */
+  line-height: 1.6;     /* Ketinggian baris agar teks nyaman dibaca */
+  color: #4a5568;       /* Warna teks deskripsi agak keabuan */
+  margin-bottom: 2rem;  /* rem: Jarak bawah deskripsi ke area tombol */
+}
+
+.hero-actions {
+  display: grid;                   /* Mengaktifkan tata letak CSS Grid */
+  grid-template-columns: 2fr 1fr;  /* fr: Kolom 1 mengambil 2 bagian, kolom 2 mengambil 1 bagian */
+  gap: 1rem;                       /* Jarak antar kolom tombol */
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;                /* rem: Ruang di dalam tombol */
+  border: none;                          /* Menghapus garis tepi bawaan tombol */
+  border-radius: 6px;                    /* px: Lengkungan sudut tombol */
+  font-size: 1rem;                       /* rem: Ukuran teks tombol */
+  font-weight: 600;                      /* Ketebalan font tombol */
+  cursor: pointer;                       /* Mengubah kursor jadi ikon tangan saat dihover */
+  text-align: center;                    /* Teks tombol rata tengah */
+  transition: background-color 0.2s ease;/* Efek animasi halus saat warna berubah */
+}
+
+.btn-primary {
+  background-color: #3182ce; /* Warna dasar tombol utama (biru) */
+  color: #ffffff;            /* Warna teks tombol utama */
+}
+
+.btn-primary:hover {
+  background-color: #2b6cb0; /* Warna tombol utama saat diarahkan kursor */
+}
+
+.btn-secondary {
+  background-color: #e2e8f0; /* Warna dasar tombol kedua (abu-abu) */
+  color: #2d3748;            /* Warna teks tombol kedua */
+}
+
+.btn-secondary:hover {
+  background-color: #cbd5e0; /* Warna tombol kedua saat diarahkan kursor */
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    grid-template-columns: 1fr; /* 1fr: Mengubah grid jadi 1 kolom penuh di layar kecil (mobile) */
+  }
+}
